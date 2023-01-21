@@ -19,9 +19,7 @@ public class SelectionSortTest {
     public void testSortSameNumbers() {
         int[] list = new int[]{ 0, 0, 0, 0 };
         int[] result = SelectionSort.sort(list);
-        for (int i = 0; i < list.length; i++) {
-            Assert.assertEquals(0, result[i]);
-        }
+        Assert.assertArrayEquals(list, result);
     }
 
     @Test
